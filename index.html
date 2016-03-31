@@ -1,15 +1,653 @@
-<!DOCTYPE html>
 <html>
-<head>
-	<title>Deducely - Increase Saas Sales</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-</head>
-<body>
-	<div class="soon">
-		<h1>Sales Empowerment</h1>
-		<p> 		 
-			Coming soon; One feature at a time.
-		</p>
-</body>
+	<head>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+		<!-- Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Ubuntu:400,300,500,700' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900' rel='stylesheet' type='text/css'>
+
+		<!-- Rate Chart -->
+		<link rel="stylesheet" href="css/rate.min.css">
+		<script src="js/jquery.rate.js"></script>
+
+		<!-- Other needed scripts-->
+		<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+		<script src="js/typed.min.js"></script>
+		<script src="http://rawgit.com/saribe/eModal/master/dist/eModal.min.js"></script>
+
+		<!-- style sheet for the page -->
+		<link rel="stylesheet" href="css/style.css">
+
+		<script type="text/javascript">
+
+			function capitalize(word){
+	    		return word.charAt(0).toUpperCase() + word.slice(1);
+			}
+
+			/* banner type writing action */
+
+			$(function(){
+		      $(".typewrite").typed({
+		        strings: ["SuperPowers for your CRM!"],
+		        typeSpeed: 100
+		      });
+		  	});
+
+			/* add shadow to navbar on scroll */
+
+			$(document).ready(function(){
+				var targetOffset = $("#bottom-page").offset().top;
+				var $w = $(window).scroll(function(){
+				    if ( $w.scrollTop() >= targetOffset ) {
+				    	//changes when window on main body
+						$(".navbar-default").css('box-shadow', '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)');
+				    } else {
+				    	//changes when window is on Top
+				      	$(".navbar-default").css('box-shadow', 'none');
+				    }
+				});
+			})
+
+			/* scroll down onclick knowmore button */
+
+			$(document).ready(function(){
+				$("#knowMore").click(function() {
+	    			$('html, body').animate({scrollTop: $("#bottom-page").offset().top}, 1000);
+	    		});
+    		});
+
+			/* scroll down to data enrichment part onclick of how button */
+
+    		$(document).ready(function(){
+				$("#go_to_enrichment").click(function() {
+	    			$('html, body').animate({scrollTop: $("#lead_markup").offset().top}, 1000);
+	    		});
+    		});
+
+    		/* scroll down to PLS part onclick of how button */
+
+    		$(document).ready(function(){
+				$("#go_to_pls").click(function() {
+	    			$('html, body').animate({scrollTop: $("#pls_markup").offset().top}, 1000);
+	    		});
+    		});
+
+
+    		/* navbar - scroll down to data enrichment part onclick of button */
+
+    		$(document).ready(function(){
+				$("#navbar_lead").click(function() {
+	    			$('html, body').animate({scrollTop: $("#lead_markup").offset().top}, 1000);
+	    		});
+    		});
+
+    		/* navbar - scroll down to PLS part onclick of button */
+
+    		$(document).ready(function(){
+				$("#navbar_pls").click(function() {
+	    			$('html, body').animate({scrollTop: $("#pls_markup").offset().top}, 1000);
+	    		});
+    		});
+
+
+
+
+			/* Lead Scoring Visual Representation */
+
+    		function setHover(key, value){
+    			if(Array.isArray(value)){
+    				var new_value = ''
+    				for(i in value){
+    					new_value = new_value+value[i]+"</br>"
+    				}
+    				value = new_value+'...';
+    			}
+
+    			if(key == 'ipo_funding'){
+    				value = 'IPO : '+value.ipo+"</br>Funds : "+value.funding
+    			}
+
+    			if(key == 'social_media'){
+    				var facebook = '<a class="social-links" href=\"'+value.facebook_link+'\">Facebook</a>'
+    				var twitter = '<a class="social-links" class href=\"'+value.twitter_link+'\">Twitter</a>'
+    				var linkedin = '<a class="social-links" href=\"'+value.linkedin_link+'\">Linkedin</a>'
+    				value = facebook+'</br>'+twitter+'</br>'+linkedin;
+    			}
+
+    			$('#'+key).hover(
+				    function() {
+				        var $this = $(this); // caching $(this)
+				        $this.data('initialText', $this.html());
+				       	$this.html('<span>'+capitalize(value)+'</span>');
+				    },
+				    function() {
+				        var $this = $(this); // caching $(this)
+				       	$this.html($this.data('initialText'));
+				    });
+    		}
+
+    		function setTableData(key, value){
+    			$('#table_'+key).text(value);
+    		}
+
+			$(document).ready(function(){
+				var companyDetails = [{'company_name':'Freshdesk','founded_year':'2010', 'ipo_funding':{'ipo':'No','funding':'$95M'}, 'employee_count':'500-800','social_media':{'facebook_link':"fb.com/freshdesk","twitter_link":'twitter.com/freshdesk','linkedin_link':'linkedin.com/freshdesk'},'press_coverage':'True','technologies_used':['Rails','HTTPS', 'SPF'],'paid_technologies':['Optimizely','Kiss Metrics', 'Send Grid'], 'adsense_budget': '$130k', 'alexa_rank':'Top 3000','page_views':'1M'}]
+
+				$('#company_name').html('<span>'+companyDetails[0].company_name+'</span>');
+
+	    		for(key in companyDetails[0]){
+	    			setHover(key, companyDetails[0][key]);
+	    			if(key == 'ipo_funding'){
+	    				setTableData('ipo',companyDetails[0].ipo_funding.ipo);
+	    				setTableData('funding',companyDetails[0].ipo_funding.funding);
+	    			}else{
+	    				setTableData(key,companyDetails[0][key]);
+	    			}
+	    		}
+
+	    	});
+
+
+			/* Predictive Lead Scoring Representation */
+
+			function getRandomInt(min, max) {
+	    		return Math.floor(Math.random() * (max - min + 1)) + min;
+			}
+
+			function threeBlocks(blocks){
+
+				for(key in blocks){
+					console.log(key);
+					console.log(blocks[key]);
+
+					var element = '.'+key;
+					$(element).data('value', blocks[key]);
+			        $(element).rateBox({
+			            width: 150,
+			            height: blocks[key]*4,
+			            fontSize: 30,
+			        });
+				}
+			}
+
+			$(document).ready(function(){
+					var scores = [getRandomInt(30,40),getRandomInt(50,65),getRandomInt(90,99)];
+					var threeBlocksObject = {'block1':scores[1],'block2':scores[2],'block3':scores[0]};
+				  	threeBlocks(threeBlocksObject);
+			})
+
+
+/*
+			$(document).ready(function(){
+				var targetOffset = $("#lead-show").offset().top;
+				$('#chart-anim').hide();
+				$('.winner-img').hide();
+				var $w = $(window).scroll(function(){
+				    if ( $w.scrollTop() >= targetOffset ) {
+				    	//changes when window on main body
+				    	$('#chart-anim').show("slide",{direction:"down"},1000);
+				    	$('.winner-img').fadeIn(2000);
+				    } else {
+				    	//changes when window is on Top
+				    	$('#chart-anim').hide("slide",{direction:"down"},800);
+				    	$('.winner-img').fadeOut(1000);
+				    }
+				});
+			})
+*/
+			/* embed form action */
+
+			$(document).ready(function(){
+				    $('#navbar_signup').on('click', function(){
+					eModal.iframe('https://docs.google.com/a/deducely.com/forms/d/1V7wgK2MNeCHjNefoHn5MNnZ4BcpFaj1OeKPc0KPs7f0/viewform', ' ');
+					});
+				    $('#footer_auction').on('click', function(){
+					eModal.iframe('https://docs.google.com/a/deducely.com/forms/d/1V7wgK2MNeCHjNefoHn5MNnZ4BcpFaj1OeKPc0KPs7f0/viewform', ' ');
+					});
+			})
+
+			/* navbar logo action*/
+
+			$(document).ready(function(){
+				var targetOffset = $("#navbar_logo_show").offset().top;
+				$('#navbar_logo').hide();
+				var $w = $(window).scroll(function(){
+				    if ( $w.scrollTop() >= targetOffset ) {
+				    	//changes when window on main body
+				    	$('#navbar_logo').fadeIn(2000);
+				    } else {
+				    	//changes when window is on Top
+				    	$('#navbar_logo').fadeOut(1000);
+				    }
+				});
+			})
+		</script>
+
+	</head>
+
+	<body>
+			<!-- Top of Page-->
+			<div id='top' class="top">
+			    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+			      <div class="container-fluid">
+			        <div class="navbar-header">
+			          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+			            <span class="sr-only">Toggle navigation</span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			            <span class="icon-bar"></span>
+			          </button>
+			          <a class="navbar-logo" href="/"><img id="navbar_logo" src="images/logo.svg"></a>
+			        </div>
+			        <div id="navbar" class="navbar-collapse collapse">
+			          <ul class="nav navbar-nav navbar-right">
+			            <li><a href="#"><button id="navbar_lead" class="navbar_btn hvr-overline-from-left">Lead Enrichment</button></a></li>
+			            <li><a href="#about"><button id="navbar_pls" class="navbar_btn hvr-overline-from-left">Predictive Lead Scoring</button></a></li>
+			            <!--<li><a href="#contact"><button class="navbar_btn hvr-overline-from-left">Our Story</button></a></li>-->
+			          	<li><a href="#contact"><button id="navbar_signup" class="btn signup_btn hvr-grow-shadow">Sign Up</button></a></li>
+			          </ul>
+			        </div><!--/.nav-collapse -->
+			      </div>
+			    </div>
+
+		   		<!-- Jumobran on Header -->
+				<div class="main-header">
+					<div class="container">
+						<div class="jumbotron">
+							<div class="banner-subtitle-spacing">
+								<img class="main-logo" src="images/logo.svg">
+								<div id="navbar_logo_show" class="banner-subtitle-spacing"><h1 class='typewrite'></h1></div>
+								<p> Harness the power of Artificial Intelligence</br>
+								Make better sales decisions and close more deals
+								</p>
+							</div>
+						 	<p class="banner-subtitle-spacing"> <a id="knowMore" class="btn btn-primary btn-lg header-button hvr-grow-shadow" href="#" role="button">Know more  <span class="caret"></span></a></p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Markup for Know More Scroll in Javascript -->
+			<div id="bottom-page"></div>
+
+			<!-- Main Block Container-->
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6">
+							<div class=" container-fluid thumbnail two-blocks-thumbnail">
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Lead Data Enrichment</h3>
+							      		<img src="images/nurture.svg">
+							      		<div class="caption">
+								        <p class="centerBlock">A tonne of information about
+								        your leads is hidden in plain sight. Deducely enables your team to leverage
+								        this information so that they can get in-sync with your potential customers</p>
+							      		</div>
+							      	</div>
+							      </div>
+							      <div class="container-fluid">
+								      <div class="row">
+								      	<div class="col-md-12">
+								      		<button id="go_to_enrichment" class="btn">What kind of data would I get from Deducely?</button>
+								      	</div>
+								      </div>
+							      </div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class=" container-fluid thumbnail two-blocks-thumbnail">
+								<div class="row">
+									<div class="col-md-12">
+										<h3>Predictive Lead Scoring</h3>
+							      		<img src="images/grade.svg">
+							      		<div class="caption">
+								        	<p class="centerBlock">Conventional lead scoring is boring!
+									        combining the data available about your new leads and historic leads with Artificial
+									        Intelligence helps you look into the future and identify winning leads.</p>
+							      		</div>
+							      	</div>
+							      <div class="container-fluid">
+								      <div class="row">
+								      	<div class="col-md-12">
+								      		<button id="go_to_pls" class="btn">How do you determine the Winning Leads?</button>
+								      	</div>
+								      </div>
+							      </div>
+								</div>
+							</div>
+							<div id="lead_markup"></div>
+						</div>
+					</div>
+				</div>
+
+				<!-- End of Row block 1 -->
+
+				<!-- Row block 2 -->
+				<div class="container-fluid gray-row top-margin lead-padding">
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="head-text">Get deeper insight on your Leads</h3>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row lead-block hidden-xs hidden-sm">
+							<div class="col-md-2"></div>
+							<div class="col-md-8">
+								<div class="container-fluid">
+						        	<div class="row">
+										<div id="company_name" class="col-md-2 mat-block lead-image-block lead-image-active">
+											<span>Company Name</span>
+										</div>
+										<div id="founded_year" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Founded Year</span>
+										</div>
+										<div id="employee_count" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Employee Count</span>
+										</div>
+										<div id="ipo_funding" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>IPO & Funding</span>
+										</div>
+									</div>
+									<div class="row">
+										<div id="press_coverage" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Press Coverage</span>
+										</div>
+										<div id="social_media" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Social Media</span>
+										</div>
+										<div id="alexa_rank" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Traffic Rank</span>
+										</div>
+										<div id="page_views" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Page Views</span>
+										</div>
+									</div>
+									<div class="row">
+										<div id="technologies_used" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Technologies Used</span>
+										</div>
+										<div id="paid_technologies" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Paid Technologies</span>
+										</div>
+										<div id="adsense_budget" class="col-md-2 mat-block lead-image-block hvr-bounce-to-bottom">
+											<span>Adsense Budget</span>
+										</div>
+										<div id="much_more" class="col-md-2 mat-block lead-image-block lead-image-active">
+											<span>Much more..</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-2"></div>
+				        </div>
+				        <div class="row visible-sm visible-xs">
+				        	<div class="col-md-12">
+								<div class="container lead-table">
+								  <h2 id="table_company_name">Company Name</h2>
+								  <table class="table">
+								    <tbody>
+								      <tr>
+								        <td>Founded Year</td>
+								        <td id="table_founded_year"></td>
+								      </tr>
+								      <tr>
+								        <td>Employee Count</td>
+								        <td id="table_employee_count"></td>
+								      </tr>
+								      <tr>
+								        <td>IPO</td>
+								        <td id="table_ipo"></td>
+								      </tr>
+								      <tr>
+								        <td>Funding</td>
+								        <td id="table_funding"></td>
+								      </tr>
+								      <tr>
+								        <td>Adsense Budget</td>
+								        <td id="table_adsense_budget"></td>
+								      </tr>
+								      <tr>
+								        <td>Press Coverage</td>
+								        <td id="table_press_coverage"></td>
+								      </tr>
+								      <tr>
+								        <td>Alexa Rank</td>
+								        <td id="table_alexa_rank"></td>
+								      </tr>
+								      <tr>
+								        <td>Page Views</td>
+								        <td id="table_page_views"></td>
+								      </tr>
+								    </tbody>
+								  </table>
+								</div>
+				        	</div>
+				        	<!-- Mark up for Lead Enrichment anim to show up -->
+							<div id="lead-show"></div>
+				        </div>
+					</div>
+
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-md-12 col-sm-12 big-btn-block">
+								<a href="#lead_enrichment" class="btn btn-lg btn-big centerBlock">Tell me more about Lead Enrichment</a>
+							</div>
+						</div>
+						<div id="pls_markup"></div>
+					</div>
+				</div>
+			<!-- End of Row block 2 -->
+
+
+
+		<!-- Row block 3 -->
+		<div class="container top-margin predict-bottom-margin">
+			<div class="row">
+				<div class="col-md-12">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h3 class="head-text">Look into the future</h3>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12">
+								<div class="container">
+									<div class="row">
+										<div class=" col-md-6 bar-chart-block hidden-xs hidden-sm">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-12">
+														<div class="winner-img-block">
+															<img src="images/winner_cup.png" class="winner-img centerBlock">
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-12">
+														<div id="chart-anim" class="centerBlock">
+															<div class="block1 block" data-value="70"></div>
+															<div class="block2 block" data-value="90"></div>
+															<div class="block3 block" data-value="30"></div>
+														</div>
+														<div class="centerBlock"><span class="bar-name">Lead X</span><span class="bar-name">Lead Y</span><span class="bar-name">Lead Z</span></div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-6 bar-chart-block visible-xs visible-sm">
+											<div class="container-fluid">
+												<div class="row">
+													<div class="col-md-12 bar-chart-resp">
+														<img src="images/podium.svg">
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class=" col-md-6">
+											<div class="winner-text-block thumbnail">
+												<p>Predictive Lead Scoring enables you to identify your winning
+												leads by combining extensive information about your leads with
+												Artificial Intelligence.</p></br>
+												<p>We scour the world wide web for hundreds of data signals on your
+												leads, like their employee count, open job postings, paid software
+												usage, online advertising budget, press coverage etc..</p></br>
+												<p>We feed this data into our predictive engine that uses AI tech like
+												Machine Learning to forecast which of your leads would convert.</p></br>
+												<div class="winner-icons"><img src="images/medal_gold.svg"><p>Gold leads have a high likelyhood of converting, follow up,
+												nurture and engage.</p></div>
+												<div class="winner-icons"><img src="images/medal_silver.svg"><p>Silver leads need more push to get converted, give them a coupon maybe?</p></div>
+												<div class="winner-icons"><img src="images/medal_bronze.svg"><p>Bronze leads are highly unlikely to convert, do not pursue these rigorously.</p></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-12 col-sm-12 big-btn-block">
+							<a href="#predictive_lead_scoring" class="btn btn-lg btn-big centerBlock">More about Predictive Lead Scoring</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+			<!-- End of Row block 3 -->
+
+
+
+			<div class="container-fluid">
+				<!-- Row block 1 -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="container-fluid">
+							<div class="row">
+								<div class="col-md-4">
+									<div class="three-blocks-padding">
+										<div class="thumbnail three-blocks-thumbnail">
+									  		<img src="images/fits_seamleesly.svg">
+									      	<div class="caption">
+										      	<h3>Fits seemlessly into your workflow</h3>
+										        <p>We also hate it when new tools are added
+										        to workflows. However we play nice with all your existing tools like
+										        your CRM, marketing automation software, Helpdesk etc. Our data and
+										        predictions live right inside the tools that you are already familiar
+										        with. Embrace the zero learning curve!</p>
+									      	</div>
+									  </div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="three-blocks-padding">
+									  <div class="thumbnail three-blocks-thumbnail">
+									  	  <img src="images/orgs_scale.svg">
+									      <div class="caption">
+									      	<h3>Suitable for orgs of any scale</h3>
+									        <p>You may be a publicly listed juggernaut,
+									        a nimble startup or anything in between, we've got you covered. we do not
+									        mandate you to have X number of leads before implentation.</p>
+									      </div>
+									  </div>
+									</div>
+								</div>
+								<div class="col-md-4">
+									<div class="three-blocks-padding">
+									  <div class="thumbnail three-blocks-thumbnail">
+									      <img src="images/nocoding.svg">
+									      <div class="caption">
+									      	<h3>No Coding Required!</h3>
+									        <p>We belive that good software should not force
+									        the end-user to wrangle with code. Let the #includes, terminals and servers
+									        rest with the techies.  However if you need API access to integrate Deducely in your app, we've got your back too!</p>
+									      </div>
+									  </div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 centerBlock">
+						<div class="quote">
+							<a href="http://techcrunch.com/2015/11/14/2016-will-be-the-year-of-the-sales-stack/" rel="nofollow" target="_blank"><span>
+								" 2016 will be the year of The Sales Stack " - TechCrunch
+							</span></a>
+							</br>
+							<span>Ready to up the ante?</span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+		</div>
+		<!-- End of Main Block Container -->
+
+		<!-- Footer Block -->
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-4">
+						<div class="email-icon">
+						  <img src="images/email-ico.png" class="icon"/>
+						  <span class="footer-email"> hello@deducely.com</span>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="input-group apply_pilot">
+						  <button id="footer_auction" class="btn hvr-bounce-in centerBlock">Apply for Pilot Program</button>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="social-icon">
+							<a href="https://www.facebook.com/deducely" rel="nofollow" target="_blank">
+								<img src="images/facebook-ico.png" class="icon"/>
+							</a>
+						  	<a href="https://twitter.com/deducely" rel="nofollow" target="_blank">
+						  		<img src="images/twitter-bird-ico.png" class="icon"/>
+						  	</a>
+						  	<a href="https://www.linkedin.com/company/deducely" rel="nofollow" target="_blank">
+						  		<img src="images/linkedin-ico.png" class="icon"/>
+						  	</a>
+						  	<a href="https://plus.google.com/103187752751976062320/about" rel="nofollow" target="_blank">
+						  		<img src="images/googleplus-ico.png" class="icon"/>
+						  	</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Google Analytics -->
+		<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+		  ga('create', 'UA-75823232-1', 'auto');
+		  ga('send', 'pageview');
+
+		</script>
+
+	</body>
 </html>
