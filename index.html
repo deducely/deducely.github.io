@@ -217,10 +217,10 @@
 				var $w = $(window).scroll(function(){
 				    if ( $w.scrollTop() >= targetOffset ) {
 				    	//changes when window on main body
-				    	$('#navbar_logo').fadeIn(2000);
+				    	$('#navbar_logo').show();
 				    } else {
 				    	//changes when window is on Top
-				    	$('#navbar_logo').fadeOut(1000);
+				    	$('#navbar_logo').hide();
 				    }
 				});
 			})

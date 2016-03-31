@@ -52,7 +52,7 @@
 	color: white;
     margin-bottom: 30px;
     padding: 80px 0;
-    min-height: 100%;																																				
+    min-height: 100%;
 }
 
 .main-footer {
@@ -84,7 +84,7 @@
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus{
 	color:#FFFFFF;
-	background-color: transparent;    			
+	background-color: transparent;
 }
 
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
@@ -106,7 +106,7 @@
 	font-weight: 500;
 }
 
-.navbar-default .navbar-nav>li>a:hover, 
+.navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
     color: #FFFFFF;
     background-color: transparent;
@@ -117,7 +117,7 @@
 	background:#FFFFFF;
 }
 
-.container .jumbotron, 
+.container .jumbotron,
 .container-fluid .jumbotron{
 	background-color: transparent;
 	text-align: center;
@@ -295,7 +295,7 @@ a.btn.btn-primary.btn-lg.header-button {
 }
 
 .footer-email{
-	margin:15px;	
+	margin:15px;
 	font-family: Ubuntu;
 	font-size: 16px;
 	color:#0099cc;
@@ -345,9 +345,9 @@ a.btn.btn-primary.btn-lg.header-button {
 .stack-body{
   height:inherit;
   width:400px;
-  border-style:solid; 
-  border-width:thin;  
-  border-color:black; 
+  border-style:solid;
+  border-width:thin;
+  border-color:black;
   padding:10px;
 }
 
@@ -399,7 +399,7 @@ a.btn.btn-primary.btn-lg.header-button {
 
 .lead-text{
 	text-align: center;
-}	
+}
 
 .shadow-block{
     -moz-box-shadow:5px 5px 7px rgba(33,33,33,1);
@@ -416,25 +416,25 @@ a.btn.btn-primary.btn-lg.header-button {
 .border-left{
 	border-left-style: solid;
     border-left-color: #000000;
-    border-left-width: thin;	
+    border-left-width: thin;
 }
 
 .border-right{
 	border-right-style: solid;
     border-right-color: #000000;
-    border-right-width: thin;	
+    border-right-width: thin;
 }
 
 .border-bottom{
 	border-bottom-style: solid;
     border-bottom-color: #000000;
-    border-bottom-width: thin;	
+    border-bottom-width: thin;
 }
 
 .border-top{
 	border-top-style: solid;
     border-top-color: #000000;
-    border-top-width: thin;	
+    border-top-width: thin;
 }
 
 .social-links{
@@ -468,7 +468,7 @@ a.btn.btn-primary.btn-lg.header-button {
     margin: 20px;
 	/*border-style: solid;
 	border-width: thin;
-	border-color: #000000;*/	
+	border-color: #000000;*/
 }
 
 .winner-img{
@@ -555,7 +555,7 @@ a.btn.btn-primary.btn-lg.header-button {
     font-size: 16px;
     width: 90%;
     margin-top:2%;
-}			
+}
 
 .two-blocks-thumbnail button:hover,
 .two-blocks-thumbnail button:focus{
@@ -641,7 +641,7 @@ a.btn.btn-primary.btn-lg.header-button {
 
 .btn{
     white-space:normal !important;
-    word-wrap:break-word; 
+    word-wrap:break-word;
 }
 
 .three-blocks-thumbnail img {
@@ -771,6 +771,7 @@ button.navbar_btn:hover{
 
 .main-logo{
 	height:20%;
+  width:70%;
 }
 
 .navbar-logo img {
