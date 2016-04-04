@@ -17,36 +17,6 @@
 
 }
 
-.col-two{
-	margin-top: 60px;
-	margin-bottom: 30px;
-}
-
-.col-two-block{
-	min-height: 250px;
-	background: transparent;
-	margin-bottom: 30px;
-	padding: 30px;
-}
-
-.col-two-left-space{
-	.margin-left: 60px;
-}
-
-.col-two-block-row{
-	margin-bottom: 60px;
-}
-
-.col-two-block-text{
-	font-family: "Open Sans";
-	font-size: 15px;
-	font-weight: 300;
-}
-
-.col-two-text-head{
-	font-weight: 500;
-}
-
 .main-header {
 	background-color: #0099CC;
 	color: white;
@@ -503,21 +473,10 @@ a.btn.btn-primary.btn-lg.header-button {
 	text-align: justify;
 }
 
-/*
-.two-blocks-thumbnail{
-	min-height: 425px;
-    width: 435px;
-    text-align: center;
-    padding: 30px;
-    -moz-box-shadow: 5px 5px 7px rgba(33,33,33,1);
-    -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
-    box-shadow: 2px 1px 7px rgba(33,33,33,.5);
-}*/
-
 .two-blocks-thumbnail {
-   	width: 80%;
-	text-align: center;
-	padding: 4%;
+    width: 80%;
+    text-align: center;
+    padding: 4%;
     -moz-box-shadow: 5px 5px 7px rgba(33,33,33,1);
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     box-shadow: 2px 1px 7px rgba(33,33,33,.5);
@@ -529,6 +488,7 @@ a.btn.btn-primary.btn-lg.header-button {
     padding: 15px;
     font-weight: bold;
     color: #67809F;
+    font-size: 2.8vh;
 }
 
 .two-blocks-thumbnail span{
@@ -543,7 +503,7 @@ a.btn.btn-primary.btn-lg.header-button {
     background: transparent;
     border: thin solid #2a6496;
     color: #2a6496;
-    font-size: 15px;
+    font-size: 2.2vh;
     font-weight: 300;
 }
 
@@ -552,7 +512,7 @@ a.btn.btn-primary.btn-lg.header-button {
     min-height: 130px;
     padding: 10px 5px 10px 5px;
     font-family: Lato;
-    font-size: 16px;
+    font-size: 2.4vh;
     width: 90%;
     margin-top:2%;
 }
