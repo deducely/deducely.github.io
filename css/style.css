@@ -433,6 +433,11 @@ a.btn.btn-primary.btn-lg.header-button {
 	display: inline-block;
 }
 
+.bar-chart-image{
+    width: 45vh;
+    height: 40vh;
+}
+
 .bar-chart{
 	width: 320px;
     height: 130px;
