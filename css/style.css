@@ -97,6 +97,7 @@
 	font-family: 'Open Sans';
 	font-weight: 300;
 	align-items: center;
+	font-size: 3vh;
 }
 
 .banner-subtitle-spacing {
@@ -107,7 +108,7 @@
 h1.typewrite{
     display: inline;
     font-family: 'Open Sans';
-    font-size: 45px;
+    font-size: 6.5vh;
     font-weight: bold;
     color: #E4F1FE;
 }
@@ -116,7 +117,7 @@ a.btn.btn-primary.btn-lg.header-button {
     background: transparent;
     border-width: thin;
     border-color: #FFFFFF;
-    font-size: 18px;
+    font-size: 2.6vh;
     font-weight: 500;
     margin-top: 50px;
 }
@@ -730,8 +731,8 @@ button.navbar_btn:hover{
 }
 
 .main-logo{
-	height:20%;
-  width:70%;
+    height: 18vh;
+    width: 43vh;
 }
 
 .navbar-logo img {
