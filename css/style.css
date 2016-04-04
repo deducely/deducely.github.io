@@ -526,9 +526,9 @@ a.btn.btn-primary.btn-lg.header-button {
 
 
 .two-blocks-thumbnail img {
-    width: 28vw;
-    height: 25vh;
-    padding: 3%;
+    width: 32vw;
+    height: 20vh;
+    margin: 0.5vh;
 }
 
 .winner-text-block p{
