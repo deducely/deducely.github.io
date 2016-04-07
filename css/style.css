@@ -117,7 +117,7 @@ a.btn.btn-primary.btn-lg.header-button {
     background: transparent;
     border-width: thin;
     border-color: #FFFFFF;
-    font-size: 2.6vh;
+    font-size: 3vh;
     font-weight: 500;
     margin-top: 50px;
 }
@@ -278,7 +278,7 @@ a.btn.btn-primary.btn-lg.header-button {
 }
 
 .head-text {
-    font-size: 32px;
+    font-size: 5.5vh;
     font-family: 'Ubuntu';
     font-weight: bold;
     text-align: center;
@@ -291,7 +291,7 @@ a.btn.btn-primary.btn-lg.header-button {
     background-color: transparent;
     font-weight: 200;
     font-family: Ubuntu;
-    font-size: 118%;
+    font-size: 3vh;
     color: #336E7B;
     border-style: solid;
     border-color: #336E7B;
@@ -588,12 +588,12 @@ a.btn.btn-primary.btn-lg.header-button {
 
 .three-blocks-thumbnail h3{
 	font-family: Ubuntu;
-	font-size: 1.2em;
+	font-size: 2.8vh;
 }
 
 .three-blocks-thumbnail p {
     font-family: Lato;
-    font-size: 16px;
+    font-size: 2.4vh;
     text-align: justify;
     min-height: 35%;
     padding:5%;
@@ -605,17 +605,19 @@ a.btn.btn-primary.btn-lg.header-button {
     color: #336E7B;
 }
 
-.btn{
-    white-space:normal !important;
-    word-wrap:break-word;
-}
-
 .three-blocks-thumbnail img {
     width: 66%;
     height: 30%;
     margin-top: 4%;
     margin-bottom: 2%;
 }
+
+.btn{
+    white-space:normal !important;
+    word-wrap:break-word;
+}
+
+
 
 .bar-chart-resp{
 	height:90%;
@@ -628,7 +630,6 @@ a.btn.btn-primary.btn-lg.header-button {
 }
 
 .lead-table table {
-    width: 65%;
     border-collapse: separate;
     border-spacing: 10px;
     display: block;
@@ -643,7 +644,7 @@ a.btn.btn-primary.btn-lg.header-button {
 .lead-table h2 {
     text-align: center;
     font-family: Ubuntu;
-    font-size: 25px;
+    font-size: 5vh;
     font-weight: 500;
     color: #67809F;
 }
@@ -654,7 +655,7 @@ a.btn.btn-primary.btn-lg.header-button {
     width: 5%;
     font-family: Lato;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 2.4vh;
 	-moz-box-shadow: 5px 5px 7px rgba(33,33,33,1);
     -webkit-box-shadow: 5px 5px 7px rgba(33,33,33,.7);
     box-shadow: 5px 5px 7px rgba(33,33,33,.5);
@@ -682,7 +683,7 @@ a.btn.btn-primary.btn-lg.header-button {
 .quote span{
 	text-align: center;
     font-family: Ubuntu;
-    font-size: 1.8em;
+    font-size: 4.4vh;
     font-weight: 500;
     color: #336e7b;
 }
@@ -694,7 +695,7 @@ a.btn.btn-primary.btn-lg.header-button {
 
 .apply_pilot button{
 	font-family: Ubuntu;
-    font-size: 17px;
+    font-size: 2.4vh;
     font-weight: 500;
     width: 70%;
     padding: 3%;
@@ -717,6 +718,7 @@ a.btn.btn-primary.btn-lg.header-button {
 	background-color: transparent;
 	height: 100%;
 	padding: 13px 1px 8px 1px;
+    font-size: 2.2vh;
 }
 
 .signup_btn {
@@ -725,6 +727,7 @@ a.btn.btn-primary.btn-lg.header-button {
     height: 100%;
     padding: 10px 15px 10px 15px;
     font-weight: 500;
+    font-size: 2.2vh;
 }
 
 button.signup_btn:hover {
@@ -748,4 +751,40 @@ button.navbar_btn:hover{
 
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
 	padding-right: 3%;
+}
+
+.three-blocks-thumbnail-mobile{
+    width: 95%;
+    text-align: center;
+    border-bottom: solid #0099CC thick;
+    border-top: solid #0099CC thick;
+    margin-top: 20%;
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+    min-height:70%;
+}
+
+.three-blocks-thumbnail-mobile h3{
+    font-family: Ubuntu;
+    font-size: 2.8vh;
+}
+
+.three-blocks-thumbnail-mobile p {
+    font-family: Lato;
+    font-size: 2.4vh;
+    text-align: justify;
+    padding:5%;
+}
+
+.three-blocks-thumbnail-mobile span {
+    font-size: 6em;
+    margin: 7%;
+    color: #336E7B;
+}
+
+.three-blocks-thumbnail-mobile img {
+    width: 66%;
+    height: 30%;
+    margin-top: 4%;
+    margin-bottom: 2%;
 }
