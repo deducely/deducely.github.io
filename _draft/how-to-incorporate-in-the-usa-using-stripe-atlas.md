@@ -11,7 +11,7 @@ The US has one of the most mature banking and financial systems in the world. Ow
 Deducely being a SaaS product, we wanted the ability to charge our user's cards every month automatically without asking them to input their card number every month. Since we operate from India our options were very limited, We had 3 options in hand.
 
 1. Incorporate in a foreign country
-2. Use [2Checkout](https://www.2checkout.com) or [FastSpring](http://www.fastspring.com)
+2. Use [2Checkout](https://www.2checkout.com rel="no-follow") or [FastSpring](http://www.fastspring.com)
 3. Use Paypal subscriptions.
 
-We are bootstapped company and we did not want to spend close to $2000 on a mere company incorporation. We felt it was unnecessary. 
+We are bootstapped company and we did not want to spend close to $2000 on company incorporation. We wanted to spend that money on purcasing better severs to provide the best exprerience to our users. So option 1 was ruled out. We felt Option 2 was too unfair. We had to part with close to 10% of the money we made to these companies.
