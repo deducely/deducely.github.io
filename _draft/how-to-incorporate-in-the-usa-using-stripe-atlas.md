@@ -21,3 +21,4 @@ Deducely being a SaaS product, we wanted the ability to charge our user's cards 
 3. Use Paypal subscriptions.
 
 We are bootstapped company and we did not want to spend close to $2,000 on company incorporation. We wanted to spend that money on purcasing better severs to provide the best exprerience to our users. So option 1 was ruled out. We felt Option 2 was too unfair. We did not want to part with close to 10% of the money we made to these companies. Option 3 seemed to be the best one at hand still it had one drawback. Paypal is very developer-unfriendly and does not have the best customer support out there. All our dilemma was put to an end when Stripe launched the Atlas program.
+![Stripe Atlas]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.18.43 PM.png)
