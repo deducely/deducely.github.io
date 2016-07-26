@@ -8,6 +8,8 @@ layout: post
 
 The US has one of the most mature banking and financial systems in the world. Owing to this  many internet businesses prefer to incorporate in the US. In India the reserve bank of India does **not** allow businesses to automatically charge user's credit/debit card's; explicit user consent is expected via a second factor authentication like an OTP or a password. This hampers the smooth functioning subscription businesses. However **A US based company can store its user's credit cards and charge them automatically** in a recurring fashion without much hinderance. For the convenience of auto-charging credit cards many 'Subscription As A Service' (SAAS) companies have their headquarted in the US.
 
+![US Incorporation 101]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.02.00 PM.png)
+
 Deducely being a SaaS product, we wanted the ability to charge our user's cards every month automatically without asking them to input their card number every month. Since we operate from India our options were very limited, We had 3 options in hand.
 
 1. Incorporate in a foreign country
