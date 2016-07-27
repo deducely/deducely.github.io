@@ -26,11 +26,11 @@ We are bootstapped company and we did not want to spend close to $2,000 on compa
 ![Stripe Atlas]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.18.43 PM.png)
 
 Stripe atlas is a bento box  for busniesses to get up and running. Stripe Atlas grants the following for a flat fee of $500:
-1.US company registration (A Delaware C corp).
-2.Registering with the IRS for taxation purposes.
-3.Open a Zero balance US bank account in Silicon valley bank. 
-4.Acess to Legal and Tax consulation from PwC, Orrick and UpCounsel.
-5.**$15,000 in Amazon Web Services Credits**
+1. US company registration (A Delaware C corp).
+2. Registering with the IRS for taxation purposes.
+3. Open a Zero balance US bank account in Silicon valley bank. 
+4. Acess to Legal and Tax consulation from PwC, Orrick and UpCounsel.
+5. **$15,000 in Amazon Web Services Credits**
 
 
 
