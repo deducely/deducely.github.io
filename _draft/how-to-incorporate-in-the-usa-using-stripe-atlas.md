@@ -33,6 +33,12 @@ Stripe atlas is a bento box  for busniesses to get up and running. Stripe Atlas 
 5. **$15,000 in Amazon Web Services Credits.** 
 6. A Stripe account ready to accept payments. 
 
+1. A
+2. B
+3. C
+4. D
+
+
 I was also skeptical about this program, I even felt it ws too good to be true but when we approached  [Avinash Raghava](https://twitter.com/avinashraghava) of [iSpirit](http://www.ispirt.in)  and [Suresh Sambandam](https://twitter.com/sureshsambandam) of [KiSSFLOW](https://kissflow.com) for expert opinion, we were asked to go for and incorporate via Stripe Atlas.
 
 
