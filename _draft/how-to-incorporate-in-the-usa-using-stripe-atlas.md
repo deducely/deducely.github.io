@@ -26,13 +26,13 @@ We are bootstapped company and we did not want to spend close to $2,000 on compa
 ![Stripe Atlas]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.18.43 PM.png)
 
 Stripe atlas is a bento box  for busniesses to get up and running. Stripe Atlas grants the following for a flat fee of $500:
+
+I was also skeptical about this program, I even felt it ws too good to be true but Suresh Sambandam of KiSSFLOW and Avinash Raghava of iSpirit  
 * A
 * B
 * C
-* C
+* D
 * E
-I was also skeptical about this program, I even felt it ws too good to be true but Suresh Sambandam of KiSSFLOW and Avinash Raghava of iSpirit  
-
 
 
 
