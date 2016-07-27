@@ -9,7 +9,7 @@ layout: post
 ![US Incorporation 101]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.02.00 PM.png)
 
 
-The US has one of the most mature banking and financial systems in the world. Owing to this  many internet businesses prefer to incorporate in the US. In India the reserve bank of India does **not** allow businesses to automatically charge user's credit/debit card's; explicit user consent is expected via a second factor authentication like an OTP or a password. This hampers the smooth functioning subscription businesses. 
+The US has one of the most mature banking and financial systems in the world. Owing to this  many internet businesses prefer to incorporate in the US. In India the reserve bank of India does **not** allow businesses to automatically charge user's credit/debit card's; explicit user consent is expected via a second factor authentication like an OTP or a password. This hampers the smooth functioning of subscription businesses that charge users every month. 
 
 However **A US based company can store its user's credit cards and charge them automatically** in a recurring fashion without much hinderance. For the convenience of auto-charging credit cards many 'Subscription As A Service' (SAAS) companies have their headquarted in the US.
 
@@ -26,11 +26,11 @@ We are bootstapped company and we did not want to spend close to $2,000 on compa
 ![Stripe Atlas]({{ site.baseurl }}/forestryio/images/Screen Shot 2016-07-26 at 11.18.43 PM.png)
 
 Stripe atlas is a bento box  for busniesses to get up and running. Stripe Atlas grants the following for a flat fee of $500:
-* US company registration (A Delaware C corp).
-* Registering with the IRS for taxation purposes.
-* Open a Zero balance US bank account in Silicon valley bank. 
-* Acess to Legal and Tax consulation from PwC, Orrick and UpCounsel.
-* **$15,000 in Amazon Web Services Credits**
+* )US company registration (A Delaware C corp).
+* )Registering with the IRS for taxation purposes.
+* )Open a Zero balance US bank account in Silicon valley bank. 
+* )Acess to Legal and Tax consulation from PwC, Orrick and UpCounsel.
+* )**$15,000 in Amazon Web Services Credits**
 
 
 
