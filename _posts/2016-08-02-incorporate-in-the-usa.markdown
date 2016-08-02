@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "How we incorporated Deducely, Inc In the USA using Stripe Atlas"
+title:  "How we incorporated Deducely, Inc in the USA using Stripe Atlas"
 date:   2016-08-02 12:12:12 +0530
 permalink: /blog/how-to-incorporate-in-the-us-from-oustside-the-usa-v-3
 excerpt_separator: <!--more-->
