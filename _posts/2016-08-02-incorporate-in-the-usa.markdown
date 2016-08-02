@@ -2,7 +2,7 @@
 layout: post
 title:  "How we incorporated Deducely, Inc in the USA using Stripe Atlas"
 date:   2016-08-02 12:12:12 +0530
-permalink: /blog/how-to-incorporate-in-the-us-from-oustside-the-usa-v-3
+permalink: /blog/how-to-incorporate-in-the-us-from-oustside-the-usa-v3
 excerpt_separator: <!--more-->
 ---
 
@@ -15,7 +15,7 @@ excerpt_separator: <!--more-->
 <!--break-->
 >This article can not be considered Legal advise, please consult a lawyer and/or accountant before incorporating.
 
-![US Incorporation 101](http://i.imgur.com/cUx4iEn.png?1)
+![US Incorporation 101](http://i.imgur.com/cUx4iEn.png)
 
 
 
