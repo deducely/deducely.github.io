@@ -150,7 +150,7 @@ Overall our experience with Stripe atlas was exemplary. Their support team alway
 >If you need any help or have any queries related to this post please reach out to me at aswin &lt;at&gt; deducely &lt;dot&gt; com  
 
 <meta property="og:title" content="How we incorporated Deducely, Inc In the USA using Stripe Atlas" />
-<meta property="og:image" content="http://i.imgur.com/cUx4iEn.png?1" />
+<meta property="og:image" content="http://i.imgur.com/cUx4iEn.png" />
 <meta property="og:locale" content="en_US" />
 <meta property="og:type" content="article" />
 <meta property="og:description" content="How we incorporated Deducely, Inc in the US spending $0*" />
