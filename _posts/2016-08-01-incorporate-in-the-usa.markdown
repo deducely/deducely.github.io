@@ -145,7 +145,7 @@ You have funds in your SVB account and you want to pay for your hosting and othe
 4) The Unofficial Stripe entrepreneurs Facebook group:
 If you are not based in the US and have a US based company , we have created an [unofficial stripe atlas entrepreneurs group in Facebook](https://www.facebook.com/groups/1751531058421877/) . You are not alone here, if you run into any issues or need help you can ask other fellow atlas entrepreneurs for help.
 
-Overall our experience with Stripe atlas was exemplary. Their support team always had our back; I'd like to give a huge shoutout to Anita from the Stripe atlas team, she was very not only knowledgeable but also very patient in replying to the barrage of queries that we raised every day! Ideally a service like this would cost you at least 800$ without the bank account and $15,000 in AWS credits. Stripe Atlas = A happy meal for company incorporation!
+Overall our experience with Stripe atlas was exemplary. Their support team always had our back; I'd like to give a huge shoutout to Anita from the Stripe atlas team, she was not only very knowledgeable but also very patient in replying to the barrage of queries that we raised every day! Ideally a service like this would cost you at least 800$ without the bank account and $15,000 in AWS credits. Stripe Atlas = A happy meal for company incorporation!
 
 >If you need any help or have any queries related to this post please reach out to me at aswin &lt;at&gt; deducely &lt;dot&gt; com  
 
