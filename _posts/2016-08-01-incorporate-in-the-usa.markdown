@@ -74,7 +74,8 @@ We had not incorporated anywhere yet and we went ahead with Freshdesk's model , 
 
 Although we could have entered our local non US address, we went ahead and purchased a physical address in the US through [virtual post mail](http://www.virtualpostmail.com) for $10/month; virtualpostmail.com scan the physical mail that we get and email it to us. We received our ETPS(Electronic tax payment system) credentials through our physical address. Though the US address wouldn't be of any other use in the immediate future, we wanted Deducely to be global and hence we invested in a US physical address.
 
-We got a US phone number for free through Google Voice and entered that as our phone number, to get a Google voice number you need to know someone with a US phone number from a major carrier like Verizon, AT&Tm T-Mobile or Sprint. Once the google voice setup is done you will be able to make and receive calls from your US google voice number through the [Hangouts dialer app](https://play.google.com/store/apps/details?id=com.google.android.apps.hangoutsdialer&hl=en) . You could enter your local number here as well.
+We got a US phone number for free through Google Voice and entered that as our phone number, to get a Google voice number you need to know someone with a US phone number from a major carrier like Verizon, AT&T, T-Mobile or Sprint. Once the google voice setup is done you will be able to make and receive calls from your US google voice number through the [Hangouts dialer app](https://play.google.com/store/apps/details?id=com.google.android.apps.hangoutsdialer&hl=en) . You could enter your local number here as well.
+
 > If you choose to set up a US subsidiary with a Non US company as the parent you would be asked to present the Non US company's tax ID and registration certificate. Please consult your local lawyer and accountant for any regulatory compliances that need to be met.
 
 #### Step 4: Enter the details about the people in the company
@@ -137,7 +138,7 @@ Since we had given a PO box address in the US we were asked to give the physical
 Stripe would email you a draft of a Stock agreements, get it signed by your board of directors. Stripe would also schedule a free 30 minute call with upcounsel - a law firm for clarifying any queries.
 
 2) Sending funds to the SVB account:
-Ideally you can wire funds into your SVB account, but this is a tedious process involving a lot of waiting. We found (square cash)[https://cash.me] to be a convenient way to send cash into our SVB account. It takes 2 working days for the cash to show up in your bank account.
+Ideally you can wire funds into your SVB account, but this is a tedious process involving a lot of waiting. We found [square cash](https://cash.me) to be a convenient way to send cash into our SVB account. It takes 2 working days for the cash to show up in your bank account.
 
 3) Getting a credit / debit card :
 You have funds in your SVB account and you want to pay for your hosting and other subscriptions, there are two options that I am aware of, the first method would be to apply get a business credit/debit card from SVB and get it delivered to your address. The second method is signing up at [privacy.com](hhtps://privacy.com). Privacy.com is a new age fin tech company that links with your bank account, through this service you can generate virtual VISA cards with fixed spending limits and close them whenever you want. We use privacy.com to generate virtual credit cards and track our spending. This service is free!
