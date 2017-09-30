@@ -1,48 +1,204 @@
-<footer class="site-footer">
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
+<div class="d-footer">
+  <div class="page clearfix">
+    <div class="col-md-4">
+      <ul>
+        <li><a href='#'>API Docs</a></li>
+        <li><a href='#'>The Team</a></li>
+        <li><a href='#'>FAQs</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <ul>
+        <li><a href='#'>Terms of service</a></li>
+        <li><a href='#'>Deducely in the News</a></li>
+        <li><a href='#'>Privacy</a></li>
+      </ul>
+    </div>
+    <div class="col-md-4">
+      <div class="d-social">
+        <a href="#"><img src="assets/fb.png"/></a>
+        <a href="#"><img src="assets/tw.png"/></a>
+        <a href="#"><img src="assets/li.png"/></a>
       </div>
-
-      <div class="footer-col footer-col-2">
-        <ul class="social-media-list">
-          <!-- {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
- -->
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{ site.description }}</p>
+      <div class="d-contact">
+        <img class="mobile-footer" src="assets/smartphone-call.svg" />
+        <div class="contact-text">
+          <div>+1 (415) 868 5323 </div>
+          <div>hello@deducely.com</div>
+        </div>
       </div>
     </div>
-
   </div>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  <div class="d-address">
+    <div class="wrap-img"><img src="assets/deducelyblue.svg" class="logo" /><span class="inc">inc.</span></div>
+    <div class="address-text"> 340S Lemon Avenue, Walnut 91789 California</div>
+  </div>
+</div>
+</body>
 
-    ga('create', 'UA-75823232-1', 'auto');
-    ga('send', 'pageview');
+<!-- stats - count particles -->
+<!-- <div class="count-particles">
+<span class="js-count-particles"></span> particles
+</div> -->
 
-  </script>
+<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/deducely.css">
 
-</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="https://rawgit.com/peachananr/simple-text-rotator/master/jquery.simple-text-rotator.min.js"> </script>
+<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/peachananr/simple-text-rotator/999eb15f/simpletextrotator.css" />
+<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typed.js/1.1.7/typed.min.js"></script> -->
+<!--Script For The flip effect-->
+<script type="text/javascript">
+$(document).ready(function(){
+      $(".rotate").textrotator({
+        animation: "flipUp",
+        speed: 4000
+      });
+    });
+
+</script>
+<script>
+$(document).ready(function() {
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 80,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#676867"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3.5,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#676867",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 6,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "push"
+        },
+        // "resize": true,
+        "onresize": {
+          "enable": true,
+          "density_auto": true,
+          "density_area": 1000
+        }
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+
+  // $('.subject').typed({ strings: ['We are havin fun :)', 'Aswin Vayiravan is the CEO', 'Sathish is the full stack dev', 'Lakshmanan is a researcher', 'Deducely prevails!'],
+  // 	typeSpeed: 80,
+  // 	startDelay: 500,
+  // 	// backspacing speed
+  // 	backSpeed: 20,
+  // 	// time before backspacing
+  // 	backDelay: 500,
+  // 	// loop
+  // 	loop: true,
+  // 	// false = infinite
+  // 	loopCount: 5,
+  // 	// show cursor
+  // 	showCursor: false
+  // });
+});
+</script>
+<script>
+$("#business_email_form").submit(function(e) {
+   e.preventDefault();
+   $("#thank_you_message").text("Presto! We will get in touch very soon, We Promise !");
+});
+</script>
