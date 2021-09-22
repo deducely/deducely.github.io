@@ -1,0 +1,15 @@
+# These vars are passed from GitlabCI Secure Variables
+s3_id: <%= ENV['S3_ID'] %>
+s3_secret: <%= ENV['S3_SECRET'] %>
+s3_bucket: <%= ENV['S3_BUCKET'] %>
+
+site: public/
+max_age:
+  "css/*": 604800
+  "images/*": 604800
+  "assets/*": 604800
+  "*": 300
+
+gzip: true
+
+cloudfront_distribution_id: <%= ENV['CLOUDFRONT_DISTRIBUTION_ID'] %>

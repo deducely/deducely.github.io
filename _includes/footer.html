@@ -3,34 +3,33 @@
     <div class="col-md-4">
       <ul>
         <li><a href='#'>API Docs</a></li>
-        <li><a href='#'>The Team</a></li>
-        <li><a href='#'>FAQs</a></li>
+        <li><a href="{{ "/about" | prepend: site.baseurl }}">The Team</a></li>
+        <li><a href='/pgpKeys.txt'>PGP Keys</a></li>
       </ul>
     </div>
     <div class="col-md-4">
       <ul>
-        <li><a href='#'>Terms of service</a></li>
-        <li><a href='#'>Deducely in the News</a></li>
-        <li><a href='#'>Privacy</a></li>
+        <li><a href='/tos'>Terms of service</a></li>
+        <li><a href='/privacy'>Privacy</a></li>
       </ul>
     </div>
     <div class="col-md-4">
       <div class="d-social">
-        <a href="#"><img src="assets/fb.png"/></a>
-        <a href="#"><img src="assets/tw.png"/></a>
-        <a href="#"><img src="assets/li.png"/></a>
+        <a href="https://www.facebook.com/deducely/" target="_blank"><img src="{{ "assets/fb.png" | relative_url }}"/></a>
+        <a href="https://twitter.com/deducely" target="_blank"><img src="{{ "assets/tw.png" | relative_url }}"/></a>
+        <a href="https://in.linkedin.com/company/deducely" target="_blank"><img src="{{ "assets/li.png" | relative_url }}"/></a>
       </div>
       <div class="d-contact">
-        <img class="mobile-footer" src="assets/smartphone-call.svg" />
+        <img class="mobile-footer" src="{{ "assets/smartphone-call.svg" | relative_url }}" />
         <div class="contact-text">
-          <div>+1 (415) 868 5323 </div>
-          <div>hello@deducely.com</div>
+          <div><a href="tel:+1 (415) 868 5323" class="stripHrefColor">+1 (415) 868 5323</div>
+          <div><a href="mailto:hello@deducely.com">hello@deducely.com</a></div>
         </div>
       </div>
     </div>
   </div>
   <div class="d-address">
-    <div class="wrap-img"><img src="assets/deducelyblue.svg" class="logo" /><span class="inc">inc.</span></div>
+    <div class="wrap-img"><img src="{{ "assets/deducelyblue.svg" | relative_url }}" class="logo" /><span class="inc">inc.</span></div>
     <div class="address-text"> 340S Lemon Avenue, Walnut 91789 California</div>
   </div>
 </div>
@@ -43,31 +42,57 @@
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="assets/deducely.css">
+<link rel="stylesheet" href="{{ "assets/deducely.css" | relative_url }}">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="https://rawgit.com/peachananr/simple-text-rotator/master/jquery.simple-text-rotator.min.js"> </script>
-<link rel="stylesheet" type="text/css" href="https://cdn.rawgit.com/peachananr/simple-text-rotator/999eb15f/simpletextrotator.css" />
-<script type="text/javascript" src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script type="text/javascript" src="{{ "assets/js/jquery.simple-text-rotator.min.js" | relative_url }}"> </script>
+<link rel="stylesheet" type="text/css" href="{{ "assets/css/simpletextrotator.css" | relative_url }}" />
+<script type="text/javascript" src="{{ "assets/js/stats.min.js" | relative_url }}"></script>
+<script type="text/javascript" src="{{ "assets/js/particles.min.js" | relative_url }}"></script>
 <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.typed.js/1.1.7/typed.min.js"></script> -->
 <!--Script For The flip effect-->
 <script type="text/javascript">
-$(document).ready(function(){
-      $(".rotate").textrotator({
-        animation: "flipUp",
-        speed: 4000
-      });
+  $(document).ready(function(){
+    $(".rotate").textrotator({
+      animation: "flipUp",
+      speed: 4000
     });
 
+    function scrollToForm() {
+      $('html,body').animate({
+          scrollTop: $(".contact-form").offset().top - $('.d-header').height()
+      },'slow');
+    }
+
+    $(".signup").click(function() {
+      $('.contact-form .title').text('Request a demo');
+      scrollToForm();
+    });
+
+    $(".pricing").click(function() {
+      $('.contact-form .title').text('Get a no obligations quote');
+      scrollToForm();
+    });
+
+    $("#business_email_form").submit(function(e) {
+       e.preventDefault();
+       $('.contact-form .company-email').val($('#inputlg').val());
+       scrollToForm();
+       $("#thank_you_message").text("Presto! We will get in touch very soon, We Promise !");
+    });
+
+    $('#contact_form').submit(function(e) {
+      $("#thank_you_message").text("Presto! We will get in touch very soon, We Promise !");
+    });
+  });
 </script>
 <script>
 $(document).ready(function() {
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 40,
+        "value": 80,
         "density": {
           "enable": true,
           "value_area": 800
@@ -180,25 +205,5 @@ $(document).ready(function() {
     "retina_detect": true
   });
 
-  // $('.subject').typed({ strings: ['We are havin fun :)', 'Aswin Vayiravan is the CEO', 'Sathish is the full stack dev', 'Lakshmanan is a researcher', 'Deducely prevails!'],
-  // 	typeSpeed: 80,
-  // 	startDelay: 500,
-  // 	// backspacing speed
-  // 	backSpeed: 20,
-  // 	// time before backspacing
-  // 	backDelay: 500,
-  // 	// loop
-  // 	loop: true,
-  // 	// false = infinite
-  // 	loopCount: 5,
-  // 	// show cursor
-  // 	showCursor: false
-  // });
-});
-</script>
-<script>
-$("#business_email_form").submit(function(e) {
-   e.preventDefault();
-   $("#thank_you_message").text("Presto! We will get in touch very soon, We Promise !");
 });
 </script>
